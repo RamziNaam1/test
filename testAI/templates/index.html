@@ -1,0 +1,27 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargement des Relevés de Notes</title>
+</head>
+<body>
+    <h1>Téléchargement des Relevés de Notes</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file1">Relevé de notes 1 :</label>
+        <input type="file" name="file1" accept=".pdf"><br>
+
+        <label for="file2">Relevé de notes 2 :</label>
+        <input type="file" name="file2" accept=".pdf"><br>
+
+        <label for="file3">Relevé de notes 3 :</label>
+        <input type="file" name="file3" accept=".pdf"><br>
+
+        <button type="submit">Télécharger</button>
+    </form>
+    <br>
+    <a href="/classification">Classification des Moyennes</a>
+</body>
+</html>

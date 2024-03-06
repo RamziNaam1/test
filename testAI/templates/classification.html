@@ -1,0 +1,27 @@
+<!-- templates/classification.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification des Moyennes</title>
+</head>
+<body>
+    <h1>Classification des Moyennes</h1>
+    <table border="1">
+        <tr>
+            <th>Nom de l'Étudiant</th>
+            <th>Moyenne</th>
+            <th>Classification</th>
+        </tr>
+        {% for student in classified_students %}
+        <tr>
+            <td>{{ student[0] }}</td>
+            <td>{{ student[1] }}</td>
+            <td>{{ student[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
